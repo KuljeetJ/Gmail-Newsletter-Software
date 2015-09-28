@@ -1,10 +1,9 @@
-"""Let US DO THIS. @BOLBALA. @Authors: Mustafa, Jhala and Yashwant"""
+# Script By : Kuljeet Jhala
 
 
 from Tkinter import *
 import math,time,random
 from tkMessageBox import *
-''' BOLBALA! @Jhala, Yashwant and Mustafa'''
 import smtplib
 from datetime import datetime
 # Here are the email package modules we'll need
@@ -459,14 +458,13 @@ def _Newsletter():
         tp=MIMEText(textPart)
         message.attach(tp)
         # Gmail Login
-
-        username = 'shribolbala2@gmail.com'
-        password = 'j-fJ-cwn5F_rA2MRUilTwQ'
-        username2='shribolbala1@gmail.com'
-        password2='RH4DBoMl9H0Jug8Ua6nUKQ'
+        username = #1st email ID of organization
+        password =  #Enter Password
+        username2= # 2nd email ID of organization
+        password2=#Enter second password
         # Sending the mail
-        username3='shribolbala3@gmail.com'
-        password3='twaBQCLNpOW4YKihlge3kg'
+        username3=#3rd email ID of organization
+        password3=#Enter third password
         
         server = smtplib.SMTP('smtp.mandrillapp.com',587)
         
@@ -502,8 +500,8 @@ def _Newsletter():
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.ehlo()
         server.starttls()
-        server.login("bolbalanewsletter@gmail.com","jaybajrangbali")
-        server.sendmail("bolbalanewsletter@gmail.com","bolbalanewsletter@gmail.com",message.as_string())
+        server.login(username,password)
+        server.sendmail(,username,message.as_string())
         server.quit()
     except Exception as e:
         print e
@@ -806,7 +804,7 @@ def main():
     YKButtonChangePassword.pack()
     YKLabelE=Label(YKFrameForPassword,bg="white",width=3)
     YKLabelE.pack()
-    YKLabelForName=Label(YKFrameForPassword,bg="white",fg="black", text="Developed by: Kuljeet, Mustafa and Yashwant.",width=500,justify=RIGHT)
+    YKLabelForName=Label(YKFrameForPassword,bg="white",fg="black", text="Developed by: Kuljeet Jhala",width=500,justify=RIGHT)
     YKLabelForName.pack()
     YKFrameForPassword.pack(side=BOTTOM)
     #THE FRAME FOR TITLE
